@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navegação</title>
+    <!-- Tag LINK para importar o código CSS para o documento -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Tag NAV para criar a estrutura do menu -->
+    <nav class="menu">
+        <!-- Tag DIV para criar o botão do menu lateral -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Site para trocar o ícone https://symbl.cc/pt/ -->
+        <!-- Tag UL para criar a lista que vai conter os botões do menu -->
+        <ul class="menu-list">
+            <!-- Tag LI para criar o primeiro botão do menu chamado HOME -->
+            <li><a href="#">Home</a></li>
+            <!-- Tag LI para criar o primeiro submenu dentro do botão chamado PRODUTOS -->
+            <li class="submenu">
+                <a href="#">Produtos</a>
+                <!-- Tag UL para criar os botões do primeiro submenu dentro do botão chamado PRODUTOS -->
+                <ul class="submenu-list">
+                    <li><a href="#">Produto 1</a></li>
+                    <li><a href="#">Produto 2</a></li>
+                    <li><a href="#">Produto 3</a></li>
+                </ul>
+            </li>
+            <!-- Tag LI para criar o segundo submenu dentro do botão chamado SERVIÇOS -->
+            <li class="submenu">
+                <a href="#">Serviços</a>
+                <!-- Tag UL para criar os botões do segundo submenu dentro do botão chamado SERVIÇOS -->
+                <ul class="submenu-list">
+                    <li><a href="#">Serviço 1</a></li>
+                    <li><a href="#">Serviço 2</a></li>
+                    <li><a href="#">Serviço 3</a></li>
+                </ul>
+            </li>
+            <!-- Tag LI para criar o último botão do menu chamado CONTATO -->
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tag SCRIPT para importar o código Javascript para o documento -->
+    <script src="script.js"></script>
+</body>
+
+</html>

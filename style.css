@@ -1,0 +1,98 @@
+/* Estilos do menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    font-size: 24px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos do submenu */
+.submenu {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu-list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+}
+
+.submenu-list li {
+    margin: 10px;
+}
+
+
+.submenu-list li a {
+    color: white;
+}
+
+.submenu-list li a:hover {
+    font-size: 26px;
+}
+
+.submenu:hover .submenu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ícone do menu hamburguer */
+.menu-icon {
+    display: none;
+}
+
+/* Media query para telas até 800px */
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 24px;
+    }
+
+    .menu-list {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-list li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-list li a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .submenu-list {
+        position: static;
+        padding-left: 20px;
+    }
+
+    .submenu:hover .submenu-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
